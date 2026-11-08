@@ -6,6 +6,7 @@ import { Nav } from "@/components/Nav";
 import { cn } from "@/utils";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Hume AI - EVI - Next.js Starter",
@@ -36,6 +37,7 @@ export default function RootLayout({
           {children}
           <Toaster position="top-center" richColors={true} />
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
